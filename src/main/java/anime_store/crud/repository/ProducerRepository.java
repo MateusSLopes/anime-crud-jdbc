@@ -90,7 +90,7 @@ public class ProducerRepository {
         try (Connection conn = ConnectionFactory.getConnection();
              PreparedStatement ps = findByIdPreparedStatement(conn, id);
              ResultSet rs = ps.executeQuery()) {
-            if (!rs.next()) Optional.empty();
+            if (!rs.next()) return Optional.empty();
             return Optional.of(getProducer(rs));
         } catch (SQLException e) {
             e.printStackTrace();
