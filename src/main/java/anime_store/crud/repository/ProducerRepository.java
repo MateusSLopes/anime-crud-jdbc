@@ -10,6 +10,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 @Log4j2
 public class ProducerRepository {
@@ -32,7 +33,7 @@ public class ProducerRepository {
     public static void update(Producer producer) {
         log.info("Updating producer");
         try (Connection conn = ConnectionFactory.getConnection();
-        PreparedStatement ps = updatePreparedStatement(conn, producer)) {
+             PreparedStatement ps = updatePreparedStatement(conn, producer)) {
             ps.execute();
             log.info("Updated producer in the database '{}'", producer.getName());
         } catch (SQLException e) {
@@ -50,7 +51,7 @@ public class ProducerRepository {
 
     public static void delete(Integer id) {
         try (Connection conn = ConnectionFactory.getConnection();
-        PreparedStatement ps = deletePreparedStatement(conn, id)) {
+             PreparedStatement ps = deletePreparedStatement(conn, id)) {
             ps.execute();
         } catch (SQLException e) {
             log.error("Error while trying to delete producer '{}'", id, e);
@@ -65,7 +66,7 @@ public class ProducerRepository {
     }
 
     public static List<Producer> findByName(String name) {
-        List<Producer> producers = new ArrayList<Producer>();
+        List<Producer> producers = new ArrayList<>();
         try (Connection conn = ConnectionFactory.getConnection();
              PreparedStatement ps = findByNamePreparedStatement(conn, name);
              ResultSet rs = ps.executeQuery()) {
@@ -82,6 +83,25 @@ public class ProducerRepository {
         String sql = "SELECT * FROM anime_store.producer WHERE name LIKE ?;";
         PreparedStatement ps = conn.prepareStatement(sql);
         ps.setString(1, "%" + name + "%");
+        return ps;
+    }
+
+    public static Optional<Producer> findById(Integer id) {
+        try (Connection conn = ConnectionFactory.getConnection();
+             PreparedStatement ps = findByIdPreparedStatement(conn, id);
+             ResultSet rs = ps.executeQuery()) {
+            if (!rs.next()) Optional.empty();
+            return Optional.of(getProducer(rs));
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+
+    private static PreparedStatement findByIdPreparedStatement(Connection conn, Integer id) throws SQLException {
+        String sql = "SELECT * FROM anime_store.producer WHERE id = ?;";
+        PreparedStatement ps = conn.prepareStatement(sql);
+        ps.setInt(1, id);
         return ps;
     }
 
