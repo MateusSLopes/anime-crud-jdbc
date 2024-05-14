@@ -5,8 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="49ff7fea-0774-49d5-9096-3d25ff6d430d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/anime_store/crud/repository/AnimeRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/anime_store/crud/service/AnimeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/anime_store/crud/util/OptionsUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/anime_store/crud/repository/ProducerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/anime_store/crud/repository/ProducerRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/anime_store/crud/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/anime_store/crud/menu/Menu.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/anime_store/crud/service/ProducerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/anime_store/crud/service/ProducerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/anime_store/crud/test/CrudTest01.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/anime_store/crud/test/CrudTest01.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +22,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -47,6 +54,12 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="anime_store.crud.service" />
+      <recent name="anime_store.crud.repository" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -63,22 +76,11 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1715352907115</updated>
-      <workItem from="1715352908193" duration="19085000" />
+      <workItem from="1715352908193" duration="32270000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/anime_store/crud/menu/Menu.java</url>
-          <line>20</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

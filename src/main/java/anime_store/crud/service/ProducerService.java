@@ -2,6 +2,7 @@ package anime_store.crud.service;
 
 import anime_store.crud.domain.Producer;
 import anime_store.crud.repository.ProducerRepository;
+import anime_store.crud.util.OptionsUtil;
 
 import java.util.Optional;
 import java.util.Scanner;
@@ -9,6 +10,16 @@ import java.util.Scanner;
 
 public class ProducerService {
     public static Scanner SC = new Scanner(System.in);
+
+    public static void showMenu() {
+        System.out.println("1 - Search for producer");
+        System.out.println("2 - Create a new producer and save");
+        System.out.println("3 - Delete a producer");
+        System.out.println("4 - Update a producer");
+        System.out.println("0 - Exit");
+        int op = Integer.parseInt(SC.nextLine());
+        OptionsUtil.executeProducerService(op);
+    }
 
     public static void delete() {
         System.out.printf("Type the producer name to delete: ");
