@@ -1,7 +1,6 @@
 package anime_store.crud.test;
 
-import anime_store.crud.service.AnimeService;
-import anime_store.crud.service.ProducerService;
+import anime_store.crud.util.OptionsUtil;
 
 import java.util.Scanner;
 
@@ -19,8 +18,8 @@ public class CrudTest01 {
             int op = Integer.parseInt(sc.nextLine());
             if (op == 0) break;
             switch (op) {
-                case 1 -> ProducerService.showMenu();
-                case 2 -> AnimeService.showMenu();
+                case 1 -> OptionsUtil.showProducerMenu();
+                case 2 -> OptionsUtil.showAnimeMenu();
                 default -> System.out.println("Invalid option");
             }
         }

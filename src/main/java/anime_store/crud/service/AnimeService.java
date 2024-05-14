@@ -3,24 +3,13 @@ package anime_store.crud.service;
 import anime_store.crud.domain.Anime;
 import anime_store.crud.domain.Producer;
 import anime_store.crud.repository.AnimeRepository;
-import anime_store.crud.util.OptionsUtil;
 
 import java.util.Optional;
 import java.util.Scanner;
 
 
 public class AnimeService {
-    public static Scanner SC = new Scanner(System.in);
-
-    public static void showMenu() {
-        System.out.println("1 - Search for anime");
-        System.out.println("2 - Create a new anime and save");
-        System.out.println("3 - Delete a anime");
-        System.out.println("4 - Update a anime");
-        System.out.println("0 - Exit");
-        int op = Integer.parseInt(SC.nextLine());
-        OptionsUtil.executeAnimeService(op);
-    }
+    private static Scanner SC = new Scanner(System.in);
 
     public static void delete() {
         System.out.printf("Type the anime id to delete: ");

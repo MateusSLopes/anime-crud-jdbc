@@ -3,7 +3,31 @@ package anime_store.crud.util;
 import anime_store.crud.service.AnimeService;
 import anime_store.crud.service.ProducerService;
 
+import java.util.Scanner;
+
 public class OptionsUtil {
+    public static Scanner SC = new Scanner(System.in);
+
+    public static void showAnimeMenu() {
+        System.out.println("1 - Search for anime");
+        System.out.println("2 - Create a new anime and save");
+        System.out.println("3 - Delete a anime");
+        System.out.println("4 - Update a anime");
+        System.out.println("0 - Exit");
+        int op = Integer.parseInt(SC.nextLine());
+        OptionsUtil.executeAnimeService(op);
+    }
+
+    public static void showProducerMenu() {
+        System.out.println("1 - Search for producer");
+        System.out.println("2 - Create a new producer and save");
+        System.out.println("3 - Delete a producer");
+        System.out.println("4 - Update a producer");
+        System.out.println("0 - Exit");
+        int op = Integer.parseInt(SC.nextLine());
+        OptionsUtil.executeProducerService(op);
+    }
+
     public static void executeAnimeService(int option) {
         switch (option) {
             case 1 -> AnimeService.findByName();

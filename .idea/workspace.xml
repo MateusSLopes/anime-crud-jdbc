@@ -5,14 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="49ff7fea-0774-49d5-9096-3d25ff6d430d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/anime_store/crud/repository/AnimeRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/anime_store/crud/service/AnimeService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/anime_store/crud/util/OptionsUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/anime_store/crud/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/anime_store/crud/menu/Menu.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/anime_store/crud/service/AnimeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/anime_store/crud/service/AnimeService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/anime_store/crud/service/ProducerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/anime_store/crud/service/ProducerService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/anime_store/crud/test/CrudTest01.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/anime_store/crud/test/CrudTest01.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/anime_store/crud/util/OptionsUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/anime_store/crud/util/OptionsUtil.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,30 +27,30 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 0
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
   <component name="ProjectId" id="2gHSFNoYA5LJsaSVKHbJkW2K6gh" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.CrudTest01.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.CrudTest01.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="anime_store.crud.service" />
@@ -76,7 +73,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1715352907115</updated>
-      <workItem from="1715352908193" duration="32270000" />
+      <workItem from="1715352908193" duration="32957000" />
+      <workItem from="1715657513013" duration="1000" />
+      <workItem from="1715697969124" duration="879000" />
     </task>
     <servers />
   </component>
